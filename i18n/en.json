@@ -1,0 +1,25 @@
+{
+    "timer": {
+        "units": {
+            "ms": "ms",
+            "s": "s",
+            "miliseconds": "miliseconds",
+            "seconds": "seconds"
+        }
+    },
+    "wow": {
+        "combo": "Combo",
+        "levels": [
+            ["good", "great", "nice", "awesome"],
+            ["excellent", "wondefull", "amazing", "perfect"],
+            ["superb", "exceptional", "first class", "incredible"], 
+            ["marvelous", "unbelievable", "stunning", "staggering"],
+            ["prodigy", "spectacular", "breathtaking", "fabulous"],
+            ["phenomenal", "prodigy", "supernatural", "superman"],
+            ["the boss", "a god", "one of a kind"]
+        ]
+    },
+    "settings": {
+        
+    }
+}

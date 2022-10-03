@@ -1,0 +1,154 @@
+{
+    "game": {
+        "time": "10000s",
+        "useOrbitControls": true,
+        "locale": "en"
+    },
+    "camera": {
+        "fov": 45,
+        "near": 1,
+        "far": 3000,
+        "position": {
+            "x": 0,
+            "y": 180,
+            "z": 800
+        }
+    },
+    "assets": {
+        "base": "/assets/",
+        "fonts": [
+            "LuckiestGuy.ttf"
+        ],
+        "textures": [
+            "road.jpg"
+        ],
+        "matcaps": [
+            
+        ],
+        "models": [
+        ]
+    },
+    "ui": {
+        "font": "LuckiestGuy",
+        "timer": {
+            "time": "90s", 
+            "spacing": 15,
+            "font": {
+                "size": 16,
+                "height": 8,
+                "curveSegments": 12,
+                "bevelEnabled": true,
+                "bevelThickness": 0.03,
+                "bevelSize": 0.02,
+                "bevelOffset": 0,
+                "bevelSegments": 5
+            },
+            "position": {
+                "x": 0,
+                "y": 200,
+                "z": 200
+            }
+        },
+        "wow": {
+        }
+    },
+    "objects": {
+        "world": {
+            "solver": {
+                "iterations": 7,
+                "tolerance": 0.1
+            },
+            "physics": {
+                "friction": 0,
+                "restitution": 0.3
+            },
+            "gravity": {
+                "x": 0,
+                "y": -9.8,
+                "z": 0
+            },
+            "size": {
+                "x": 600,
+                "y": 4000,
+                "z": 100
+            }
+        },
+        "plane": {
+            "size": {
+                "x": 600,
+                "y": 4000,
+                "z": 0.2
+            },
+            "position": {
+                "x": 0,
+                "y": -50,
+                "z": 100
+            },
+            "rotation": {
+                "x": 1.5707963267948966,
+                "y": 0,
+                "z": 0
+            }
+        },
+        "ball": {
+            "radius": 20,
+            "color": "#ff8800",
+            "speed": 20,
+            "fragments": {
+                "width": 12,
+                "height": 12
+            },
+            "position": {
+                "x": 0,
+                "y": 10,
+                "z": -10
+            }
+        },
+        "pins": {
+            "speed": 20,
+            "max": 10,
+            "chance": 0.2,
+            "placement": {
+                "rows": 3,
+                "columns": 7,
+                "x": [-250, 250],
+                "y": 45,
+                "z": [-1200, -1500]
+            },
+            "default": {
+                "speed": 15,
+                "mass": 15,
+                "max": 10,
+                "chance": 0.2,
+                "color": "#F9F9F0",
+                "size": {
+                    "x": 20,
+                    "y": 90,
+                    "z": 20
+                },
+                "start": {
+                    "x": [-250, 250],
+                    "y": 45,
+                    "z": [-1200, -1500]
+                },
+                "idle": {
+                    "x": -500,
+                    "y": -200,
+                    "z": -1000
+                }
+            },
+            "types": {
+                "normal": {
+                    "max": 15,
+                    "color": "#11FF11"
+                },
+                "extra": {
+                    "chance": 0.05,
+                    "max": 1,
+                    "chance": 0.3,
+                    "color": "#FF1111"
+                }
+            }
+        }
+    }
+}
