@@ -4,6 +4,13 @@
         "useOrbitControls": true,
         "locale": "en"
     },
+    "renderer": {
+        "alpha": true,
+        "antialias": true,
+        "shadowMap": {
+            "enabled": true
+        }
+    },
     "camera": {
         "fov": 45,
         "near": 1,

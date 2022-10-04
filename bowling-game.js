@@ -225,7 +225,11 @@ class BowlingGame extends GameBase {
     }
     
     async build() {
-        const {world, scene, camera, canvas, ball, plane, width, height, renderer, pins, options, controls} = this;
+        const {
+            world, scene, camera, canvas,
+            ball, plane, width, height, renderer,
+            pins, options, controls
+        } = this;
         const {objects} = this.options.objects;
 
         const clock = new Clock();

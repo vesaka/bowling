@@ -9,21 +9,17 @@
 </template>
 <script>
     import BowlingGame from '../bowling-game';
-    import ThreeMixin from '$lib/game/mixins/three-mixin';
     export default {
-        mixins: [ThreeMixin],     
         mounted() {
-            const {renderer, canvas} = this;
-            
+            const {renderer} = this;
             const options = require(`$lib/game/bowling/config/options.json`);
             this.game = new BowlingGame({
                 renderer,
-                canvas,
+                canvas: this.$refs.canvas,
                 gui: this.$refs.gui,
                 options
             });
             this.game.load();
-            //console.log('game mount');
         },
         beforeDestroy() {
             this.game.destroy();
